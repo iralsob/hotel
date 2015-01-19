@@ -19,11 +19,11 @@
 			</div>
 			<div class="es-nav_top es-grid_8 es-alpha es-omega">
 				<ul>
-					<li><a href="">Hotel</a></li>
-					<li><a href="">Rooms & Suites</a></li>
-					<li><a href="">Reservation</a></li>
-					<li><a href="">Activities</a></li>
-					<li><a href="">Contact</a></li>
+					<li><a href="#hotel">Hotel</a></li>
+					<li><a href="#rooms">Rooms & Suites</a></li>
+					<li><a href="#reservation">Reservation</a></li>
+					<li><a href="#activities">Activities</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 			<div class="es-lang es-grid_2 es-alpha es-omega">
@@ -51,7 +51,7 @@
 	</div>
 	<div class="es-container_full es-grey">
 		<div class="es-container_12">
-			<div class="es-booking">
+			<div class="es-booking" id="reservation">
 				<div class="es-booking_wrap es-grid_12 es-alpha es-omega">
 					<div class="es-header es-grid_3 es-alpha es-omega">
 						<h3>Book a room online</h3>
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="es-rooms">
+			<div class="es-rooms" id="hotel">
 				<div class="es-room">
 					<img src="img/room1.jpg">
 					<h3>Single room <span>110 $</span></h3>
@@ -123,7 +123,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="es-gallery">
+			<div class="es-gallery" id="rooms">
 				<h3>Фотогалерея нашего отеля</h3>
 				<div class="es-border_h"></div>
 				<div class="es-select_room">
@@ -221,7 +221,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="es-reviews">
+			<div class="es-reviews" id="activities">
 				<h3>Отзывы наших клиентов</h3>
 				<div class="es-border_h"></div>
 				<div class="es-review">
@@ -239,7 +239,7 @@
 		</div>
 	</div>
 	<div class="es-container_full es-grey">
-		<div class="es-location">
+		<div class="es-location" id="contact">
 			<div class="es-container_12">
 				<h3>Месторасположение и окрестности</h3>
 				<div class="es-border_h"></div>
@@ -311,6 +311,14 @@
 		    $('.es-select_room li').removeClass('clicked');
 		    $(this).addClass('clicked');
 		});
+		$('a[href*=#]').bind("click", function(e){
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top
+                }, 1000);
+                e.preventDefault();
+            });
+            return false;
 	});
 </script>
 </html>
