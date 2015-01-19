@@ -10,7 +10,7 @@ function init () {
     
     var myPlacemark = new ymaps.Placemark([55.76, 37.56], {}, {
 								iconLayout: 'default#image',
-								iconImageHref: '/img/pointer.png',
+								iconImageHref: 'https://raw.githubusercontent.com/iralsob/hotel/gh-pages/img/pointer.png',
 								iconImageSize: [30, 42],
 								iconImageOffset: [-3, -42]
 							});
