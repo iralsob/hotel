@@ -163,7 +163,31 @@
 						</div>
 					</div>
 					<div class="es-gallery_room" id="single">
-						No photo
+						<div class="gallery-slider">
+							<ul class="slides">
+								<li>
+									<img src="img/gallery.jpg" />
+								</li>
+								<li>
+									<img src="img/gallery.jpg" />
+								</li>
+							</ul>
+						</div>
+						<div class="es-slider_bottom">
+							<div class="es-column es-column_r">
+								<h3>Rem ipsum dolor</h3>
+								<p>Lorem ipsum dolor sit amet</p>
+							</div>
+							<div class="es-column es-column_l">
+								<input type="submit" value="Забронировать этот номер">
+							</div>
+						</div>
+						<div class="es-gallery_bottom">
+							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
+							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
+							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
+							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
+						</div>
 					</div>
 					<div class="es-gallery_room" id="suite">
 						<div class="gallery-slider">
@@ -245,7 +269,15 @@
 				<div class="es-border_h"></div>
 			</div>				
 				<div class="es-map">
-					<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=rsDwYobKR-1IJqxpVzCu510jwdqUp2iN&height=450"></script>
+					<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=rsDwYobKR-1IJqxpVzCu510jwdqUp2iN&height=450">
+
+							var myPlacemark = new ymaps.Placemark([55.76, 37.56], {}, {
+						        iconLayout: 'default#image',
+						        iconImageHref: '/maps/doc/jsapi/2.1/examples/images/myIcon.gif',
+						        iconImageSize: [30, 42],
+						        iconImageOffset: [-3, -42]
+						    });
+					</script>
 				</div>
 			</div>
 	</div>
