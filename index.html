@@ -272,10 +272,19 @@
 					<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=rsDwYobKR-1IJqxpVzCu510jwdqUp2iN&height=450">
 
 							var myPlacemark = new ymaps.Placemark([55.76, 37.56], {}, {
-						        iconLayout: 'default#image',
-						        iconImageHref: 'img/pointer.png',
-						        iconImageSize: [30, 42],
-						        iconImageOffset: [-3, -42]
+								iconLayout: 'default#image',
+								iconImageHref: 'img/pointer.png',
+								iconImageSize: [30, 42],
+								iconImageOffset: [-3, -42]
+							});
+
+							myMap.geoObjects.add(myPlacemark);
+
+							var myMap = new ymaps.Map('map', {
+						         center: [55.76, 37.56],
+						         zoom: 10,
+						         // включаем масштабирование карты колесом
+						         behaviors: ['default', 'scrollZoom']
 						    });
 					</script>
 				</div>
@@ -322,37 +331,37 @@
 			directionNav: true
 		});
 		$('.es-select_room li:nth-child(1)').bind('click', function(){
-		    $("#single, #suite, #hotel").hide();
-		    $("#double").show();
-		    $('.es-select_room li').removeClass('clicked');
-		    $(this).addClass('clicked');
+			$("#single, #suite, #hotel").hide();
+			$("#double").show();
+			$('.es-select_room li').removeClass('clicked');
+			$(this).addClass('clicked');
 		});
 		$('.es-select_room li:nth-child(2)').bind('click', function(){
-		    $("#double, #suite, #hotel").hide();
-		    $("#single").show();
-		    $('.es-select_room li').removeClass('clicked');
-		    $(this).addClass('clicked');
+			$("#double, #suite, #hotel").hide();
+			$("#single").show();
+			$('.es-select_room li').removeClass('clicked');
+			$(this).addClass('clicked');
 		});
 		$('.es-select_room li:nth-child(3)').bind('click', function(){
-		    $("#double, #hotel, #single").hide();
-		    $("#suite").show();
-		    $('.es-select_room li').removeClass('clicked');
-		    $(this).addClass('clicked');
+			$("#double, #hotel, #single").hide();
+			$("#suite").show();
+			$('.es-select_room li').removeClass('clicked');
+			$(this).addClass('clicked');
 		});
 		$('.es-select_room li:nth-child(4)').bind('click', function(){
-		    $("#double, #suite, #single").hide();
-		    $("#hotel").show();
-		    $('.es-select_room li').removeClass('clicked');
-		    $(this).addClass('clicked');
+			$("#double, #suite, #single").hide();
+			$("#hotel").show();
+			$('.es-select_room li').removeClass('clicked');
+			$(this).addClass('clicked');
 		});
 		$('a[href*=#]').bind("click", function(e){
-                var anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $(anchor.attr('href')).offset().top
-                }, 1000);
-                e.preventDefault();
-            });
-            return false;
+				var anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $(anchor.attr('href')).offset().top
+				}, 1000);
+				e.preventDefault();
+			});
+			return false;
 	});
 </script>
 </html>
