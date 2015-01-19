@@ -81,4 +81,29 @@ function init () {
 	myMap.geoObjects.add(myPlacemark7);
 	myMap.geoObjects.add(myPlacemark8);
 	myMap.geoObjects.add(myPlacemark9);
+
+
+	var myPlacemark10 = new ymaps.Placemark([55.762367, 37.597812], {}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'http://iralsob.github.io/hotel/img/mark5.png',
+		iconImageSize: [31, 42],
+		iconImageOffset: [-3, -42]
+	});
+	myMap.geoObjects.add(myPlacemark10);
+
+	var myPlacemark11 = new ymaps.Placemark([55.783467, 37.602467], {}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'http://iralsob.github.io/hotel/img/mark4.png',
+		iconImageSize: [31, 42],
+		iconImageOffset: [-3, -42]
+	});
+	myMap.geoObjects.add(myPlacemark11);
+
+	var myPlacemark12 = new ymaps.Placemark([55.737852, 37.608954], {}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'http://iralsob.github.io/hotel/img/mark3.png',
+		iconImageSize: [31, 42],
+		iconImageOffset: [-3, -42]
+	});
+	myMap.geoObjects.add(myPlacemark12);
 }
