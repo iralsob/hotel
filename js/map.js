@@ -122,4 +122,12 @@ function init () {
 		iconImageOffset: [-3, -42]
 	});
 	myMap.geoObjects.add(myPlacemark14);
+
+	var myPlacemark15 = new ymaps.Placemark([55.76, 37.628453], {}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'http://iralsob.github.io/hotel/img/mark6.png',
+		iconImageSize: [31, 42],
+		iconImageOffset: [-3, -42]
+	});
+	myMap.geoObjects.add(myPlacemark15);
 }
