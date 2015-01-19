@@ -391,6 +391,7 @@ ul.flex-direction-nav li:nth-child(2) {
 	border-radius: 5px;
 	padding: 17px;
 	width: 920px !important;
+	margin-bottom: 40px;
 }
 .es-booking h3 {
 	font: 900 18px 'Open Sans';
@@ -400,6 +401,7 @@ ul.flex-direction-nav li:nth-child(2) {
 	display: block;
 	font-size: 13px;
 	opacity: .7;
+	margin-bottom: 10px;
 }
 .es-input_wrap {
 	display: inline-block;
@@ -408,5 +410,41 @@ ul.flex-direction-nav li:nth-child(2) {
 .es-header p {
 	font-size: 13px;
 	opacity: .7;
-	width: 60%;
+	width: 80%;
+}
+.es-input_wrap input,
+.es-input_wrap select {
+	border: 1px solid #d6d4d4;
+	background: #fff;
+	outline: 0;
+	box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.14) inset;
+	padding: 9px;
+	border-radius: 3px;
+	font-size: 13px;
+	color: rgba(55,53,53,.7);
+}
+.es-input_wrap input {
+	padding: 7px 12px 8px 12px;
+}
+input[type="submit"] {
+	box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.15) inset;
+	border-radius: 0;
+	border: 1px solid #fff;
+	background: #32a2e3;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	font-weight: 900;
+	font-family: 'Open Sans';
+	margin-top: 22px;
+	padding: 8px 12px 10px 12px;
+	cursor: pointer;
+}
+.es-header {
+	width: 200px !important;
+}
+.es-booking_form {
+	width: 720px !important;
+}
+b {
+	font-weight: 600;
 }
