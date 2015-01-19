@@ -316,7 +316,7 @@ ul.flex-direction-nav li:nth-child(2) {
 .es-social .fa {
 	font-size: 15px;
 	height: 22px;
-	background: #d1d1d1;
+	background: rgba(55,53,53,.2);
 	width: 22px;
 	margin: 0 5px;
 	border-radius: 13px;
@@ -324,6 +324,9 @@ ul.flex-direction-nav li:nth-child(2) {
 	text-align: center;
 	color: #fff;
 	cursor: pointer;
+}
+.es-social .fa:hover{
+	background: rgba(55,53,53,.4);
 }
 .es-menu_top .es-nav_top li {
 	border-right: 1px solid rgba(255,255,255,.2);
@@ -460,4 +463,15 @@ input[type="submit"] {
 }
 b {
 	font-weight: 600;
+}
+.es-menu_top .es-nav_top a:hover {
+	color: #32a2e3;
+}
+.es-menu_footer li a:hover {
+	cursor: pointer;
+	color: rgba(55,53,53,1);
+}
+.es-menu_footer li a {
+	color: rgba(55,53,53,.5);
+	text-decoration: none;
 }
