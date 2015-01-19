@@ -80,17 +80,28 @@ ul.flex-direction-nav li:nth-child(2) {
 	right: 0;
 }
 .flex-direction-nav a {
-	width: 30px;
-	height: 30px;
+	width: 39px;
+	height: 41px;
 	margin: -20px 0 0;
 	display: block;
-	background: url(../img/sld-nav-l.png) no-repeat 0 0;
+	background: url(../img/sld-nav.png) no-repeat;
 	position: absolute;
 	top: 50%;
 	cursor: pointer;
 	text-indent: -9999px;
-	opacity: 0;
 	-webkit-transition: all .3s ease;
+	opacity: .2;
+	right: 10px;
+}
+.flex-direction-nav a:hover{
+	opacity: .4;
+}
+.flex-direction-nav a.flex-prev {
+	background: url(../img/sld-nav-l.png) no-repeat;
+	left: 10px;
+}
+.flex-direction-nav a.flex-next {
+	right: 10px;
 }
 .es-room h3 {
 	font: 100 20px 'Open Sans';
