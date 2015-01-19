@@ -486,3 +486,7 @@ b {
 	color: rgba(55,53,53,.5);
 	text-decoration: none;
 }
+#map {
+            width: 100%;
+            height: 400px;
+        }
