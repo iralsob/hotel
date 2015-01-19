@@ -106,4 +106,20 @@ function init () {
 		iconImageOffset: [-3, -42]
 	});
 	myMap.geoObjects.add(myPlacemark12);
+
+	var myPlacemark13 = new ymaps.Placemark([55.767256, 37.614572], {}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'http://iralsob.github.io/hotel/img/mark2.png',
+		iconImageSize: [31, 42],
+		iconImageOffset: [-3, -42]
+	});
+	myMap.geoObjects.add(myPlacemark13);
+
+	var myPlacemark14 = new ymaps.Placemark([55.773251, 37.618453], {}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'http://iralsob.github.io/hotel/img/mark.png',
+		iconImageSize: [31, 42],
+		iconImageOffset: [-3, -42]
+	});
+	myMap.geoObjects.add(myPlacemark14);
 }
