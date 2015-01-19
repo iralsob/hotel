@@ -423,6 +423,19 @@ ul.flex-direction-nav li:nth-child(2) {
 	font-size: 13px;
 	color: rgba(55,53,53,.7);
 }
+.es-input_wrap select {
+	-webkit-appearance: none;
+	appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	padding-right: 21px;
+	background-image: url(../img/ar-down.png);
+	background-repeat: no-repeat;
+	background-position: 80% 50%;	
+}
+.es-input_wrap select.long {
+	background-position: 95% 50% !important;
+}
 .es-input_wrap input {
 	padding: 7px 12px 8px 12px;
 }
