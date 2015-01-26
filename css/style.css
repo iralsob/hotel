@@ -43,6 +43,9 @@ h3 {
 .es-slider .flex-control-nav {
 	display: none;
 }
+.es-slider .flex-direction-nav a {
+	top: 370px;
+}
 .flexslider img {
 	height: 730px;
 }
@@ -403,7 +406,7 @@ img.flex-active {
 }
 .es-booking {
 	display: inline-block;
-	margin-top: -50px;
+	margin-top: -40px;
 	z-index: 999;
 }
 .es-booking_wrap {
