@@ -5,6 +5,10 @@ $(document).ready(function() {
 	});
 	$('#single, #double, #suite, #hotel').flexslider({
 		animation: "slide",
+		startAt: 0,
+		slideshow: true,
+		initDelay: 0,
+		animationSpeed: 2000, 
 		controlNav: "thumbnails",
 		directionNav: true
 	});
