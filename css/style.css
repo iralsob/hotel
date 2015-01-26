@@ -39,6 +39,7 @@ h3 {
 }
 .es-slider .flexslider{
 	height: 721px;
+	overflow: hidden;
 }
 .es-slider .flex-control-nav {
 	display: none;
@@ -47,7 +48,7 @@ h3 {
 	top: 370px;
 }
 .flexslider img {
-	height: 730px;
+	width: 100%;
 }
 .es-lang {
 	text-align: right;
