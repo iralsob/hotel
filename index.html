@@ -138,10 +138,16 @@
 					<div class="es-gallery_room" id="double">
 						<div class="gallery-slider">
 							<ul class="slides">
-								<li>
+								<li  data-thumb="img/room3.jpg">
 									<img src="img/gallery.jpg" />
 								</li>
-								<li>
+								<li  data-thumb="img/room3.jpg">
+									<img src="img/gallery.jpg" />
+								</li>
+								<li  data-thumb="img/room3.jpg">
+									<img src="img/gallery.jpg" />
+								</li>
+								<li  data-thumb="img/room3.jpg">
 									<img src="img/gallery.jpg" />
 								</li>
 							</ul>
@@ -154,22 +160,22 @@
 							<div class="es-column es-column_l">
 								<input type="submit" value="Забронировать этот номер">
 							</div>
-						</div>
-						<div class="es-gallery_bottom">
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
 						</div>
 					</div>
 					<div class="es-gallery_room" id="single">
 						<div class="gallery-slider">
 							<ul class="slides">
-								<li>
-									<img src="img/gallery.jpg" />
+								<li  data-thumb="img/gallery2.jpg">
+									<img src="img/gallery2.jpg" />
 								</li>
-								<li>
-									<img src="img/gallery.jpg" />
+								<li  data-thumb="img/gallery2.jpg">
+									<img src="img/gallery2.jpg" />
+								</li>
+								<li  data-thumb="img/gallery2.jpg">
+									<img src="img/gallery2.jpg" />
+								</li>
+								<li  data-thumb="img/gallery2.jpg">
+									<img src="img/gallery2.jpg" />
 								</li>
 							</ul>
 						</div>
@@ -181,22 +187,22 @@
 							<div class="es-column es-column_l">
 								<input type="submit" value="Забронировать этот номер">
 							</div>
-						</div>
-						<div class="es-gallery_bottom">
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
 						</div>
 					</div>
 					<div class="es-gallery_room" id="suite">
 						<div class="gallery-slider">
 							<ul class="slides">
-								<li>
-									<img src="img/gallery.jpg" />
+								<li  data-thumb="img/gallery1.jpg">
+									<img src="img/gallery1.jpg" />
 								</li>
-								<li>
-									<img src="img/gallery.jpg" />
+								<li  data-thumb="img/gallery1.jpg">
+									<img src="img/gallery1.jpg" />
+								</li>
+								<li  data-thumb="img/gallery1.jpg">
+									<img src="img/gallery1.jpg" />
+								</li>
+								<li  data-thumb="img/gallery1.jpg">
+									<img src="img/gallery1.jpg" />
 								</li>
 							</ul>
 						</div>
@@ -208,22 +214,22 @@
 							<div class="es-column es-column_l">
 								<input type="submit" value="Забронировать этот номер">
 							</div>
-						</div>
-						<div class="es-gallery_bottom">
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
 						</div>
 					</div>
 					<div class="es-gallery_room" id="hotel">
 						<div class="gallery-slider">
 							<ul class="slides">
-								<li>
-									<img src="img/gallery.jpg" />
+								<li  data-thumb="img/room4.jpg">
+									<img src="img/gallery2.jpg" />
 								</li>
-								<li>
-									<img src="img/gallery.jpg" />
+								<li  data-thumb="img/room4.jpg">
+									<img src="img/gallery2.jpg" />
+								</li>
+								<li  data-thumb="img/room4.jpg">
+									<img src="img/gallery2.jpg" />
+								</li>
+								<li  data-thumb="img/room4.jpg">
+									<img src="img/gallery2.jpg" />
 								</li>
 							</ul>
 						</div>
@@ -235,12 +241,6 @@
 							<div class="es-column es-column_l">
 								<input type="submit" value="Забронировать этот номер">
 							</div>
-						</div>
-						<div class="es-gallery_bottom">
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
-							<div class="es-gallery_wrap"><img src="img/room3.jpg" /></div>
 						</div>
 					</div>
 				</div>
@@ -310,8 +310,9 @@
 			animation: "slide",
 			directionNav: true
 		});
-		$('.gallery-slider').flexslider({
+		$('#single, #double, #suite, #hotel').flexslider({
 			animation: "slide",
+			controlNav: "thumbnails",
 			directionNav: true
 		});
 		$('.es-select_room li:nth-child(1)').bind('click', function(){
@@ -334,7 +335,7 @@
 		});
 		$('.es-select_room li:nth-child(4)').bind('click', function(){
 			$("#double, #suite, #single").hide();
-			$("#suite").show();
+			$("#hotel").show();
 			$('.es-select_room li').removeClass('clicked');
 			$(this).addClass('clicked');
 		});

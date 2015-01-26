@@ -9,8 +9,8 @@ h3 {
 .es-menu_top {
 	background: rgba(0,0,0,.88);
 	height: 90px;
-	position: absolute;
-	z-index: 1;
+	position: fixed;
+	z-index: 3;
 }
 .es-menu_top > div {
 	margin-top: 20px;
@@ -39,9 +39,6 @@ h3 {
 }
 .flexslider img {
 	width: 100%;
-}
-ol.flex-control-nav.flex-control-paging {
-	display: none;
 }
 .es-lang {
 	text-align: right;
@@ -86,7 +83,7 @@ ul.flex-direction-nav li:nth-child(2) {
 	display: block;
 	background: url(../img/sld-nav.png) no-repeat;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	cursor: pointer;
 	text-indent: -9999px;
 	-webkit-transition: all .3s ease;
@@ -166,12 +163,16 @@ ul.flex-direction-nav li:nth-child(2) {
 .es-gallery_room {
 	position: relative;
 }
+img.flex-active {
+	opacity: 1 !important;
+}
 .es-slider_bottom {
 	position: absolute;
-	bottom: 4px;
+	bottom: 125px;
 	width: 100%;
 	background: rgba(0,0,0,.8);
 	padding: 15px 0;
+	z-index: 9;
 }
 .es-slider_bottom h3 {
 	color: #0087bc;
@@ -456,7 +457,6 @@ ul.flex-direction-nav li:nth-child(2) {
 input[type="submit"] {
 	box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.15) inset;
 	border-radius: 0;
-	border: 1px solid #fff;
 	background: #32a2e3;
 	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.15);
 	color: #fff;
@@ -487,6 +487,19 @@ b {
 	text-decoration: none;
 }
 #map {
-            width: 100%;
-            height: 400px;
-        }
+    width: 100%;
+    height: 400px;
+}
+ol.flex-control-nav.flex-control-thumbs li {
+	display: inline-block;
+	width: 25%;
+}
+ol.flex-control-nav.flex-control-thumbs li img{
+	width: 98%;
+	opacity: .8;
+	cursor: pointer;
+	padding: 0 1%;
+}
+ol.flex-control-nav.flex-control-thumbs li img:hover{
+	opacity: 1;
+}
