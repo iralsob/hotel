@@ -361,8 +361,6 @@ img.flex-active {
 	z-index: 1;
 	max-width: 960px;
 	width: 100vw;
-	right: 50%;
-	margin-right: -480px;
 	color: #fff;
 	text-transform: uppercase;
 }
