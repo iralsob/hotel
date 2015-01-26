@@ -172,17 +172,21 @@ ul.flex-direction-nav li:nth-child(2) {
 }
 .es-gallery_room {
 	position: relative;
+	margin-bottom: 40px;
 }
 img.flex-active {
 	opacity: 1 !important;
 }
 .es-slider_bottom {
 	position: absolute;
-	bottom: 125px;
+	bottom: 128px;
 	width: 100%;
 	background: rgba(0,0,0,.8);
 	padding: 15px 0;
 	z-index: 9;
+}
+.es-gallery_room:first-child .es-slider_bottom{
+	bottom: 124px;
 }
 .es-slider_bottom h3 {
 	color: #0087bc;
