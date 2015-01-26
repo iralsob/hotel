@@ -359,7 +359,8 @@ img.flex-active {
 .flexslider h2{
 	position: absolute;
 	z-index: 1;
-	width: 960px;
+	max-width: 960px;
+	width: 100vw;
 	right: 50%;
 	margin-right: -480px;
 	color: #fff;
